@@ -21,3 +21,15 @@ LICENSE AND MAINTAINERS
 	This is an open source software that is under GPLv3 license and is
 	maintained by Pedro H. Penna. Any questions or suggestions send him
 	an email: <pedrohenriquepenna@gmail.com>.
+
+1. git clone https://github.com/lapesd/libgomp.git
+2. cd libgomp/src/libgomp && mkdir build && cd build
+3. ../configure –host=microblazeel-xilinx-linux-gnu CC=microblazeel-xilinx-linux-gnu-gcc CXX=microblazeel-xilinx-linux-gnu-g++ –disable-multilib
+4. make -j16
+5. cp -d .lib/libgomp.so* （工具链的sysroot/lib下）
+6. cp libgomp.spec （工具链的sysroot/lib下）
+--------------------- 
+作者：Xingw-Xiong 
+来源：CSDN 
+原文：https://blog.csdn.net/ACMore_Xiong/article/details/79533658 
+版权声明：本文为博主原创文章，转载请附上博文链接！
